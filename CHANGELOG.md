@@ -36,8 +36,8 @@ beta-1.2.1
 + Added Jade Block
 + Added Jade Hoe
 
-1.4
-----
+1.4 **(UNRELEASED)**
+---------------------
 Official Release of v1.4
 
 + Added Jade Armor
