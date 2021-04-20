@@ -30,8 +30,14 @@ beta-1.2.1
 ------
 * Fixed crash when sending unnamed item in transport hub
 
-1.4
-----
+1.4.1-snapshot
+---------------
 + Added Update JSON
 + Added Jade Block
 + Added Jade Hoe
+
+1.4
+----
+Official Release of v1.4
+
++ Added Jade Armor
