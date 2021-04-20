@@ -33,3 +33,5 @@ beta-1.2.1
 1.4
 ----
 + Added Update JSON
++ Added Jade Block
++ Added Jade Hoe

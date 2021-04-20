@@ -1,0 +1,7 @@
+{
+    "variants": {
+        "": [
+            { "model": "jademc:block/jade_block" }
+        ]
+    }
+}

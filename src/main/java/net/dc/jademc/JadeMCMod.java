@@ -6,6 +6,7 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 import net.dc.jademc.block.GreenCrystalOre;
+import net.dc.jademc.block.JadeBlock;
 import net.dc.jademc.block.Package;
 import net.dc.jademc.block.TransportHub;
 import net.dc.jademc.item.ImpureCrystalItem;
@@ -105,7 +106,8 @@ public class JadeMCMod
             blockRegistryEvent.getRegistry().registerAll( // blocks
                 new GreenCrystalOre(),
                 new TransportHub(),
-                new Package()
+                new Package(),
+                new JadeBlock()
             );
         }
         @SubscribeEvent
@@ -121,7 +123,8 @@ public class JadeMCMod
             itemRegistryEvent.getRegistry().registerAll( // block items
                 new GreenCrystalOre.Item(),
                 new TransportHub.Item(),
-                new Package.Item()
+                new Package.Item(),
+                new JadeBlock.Item()
             );
             itemRegistryEvent.getRegistry().registerAll( // tools
                 new JadePickaxeItem(),

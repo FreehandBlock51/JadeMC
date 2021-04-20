@@ -35,6 +35,7 @@ public class Archive {
     public static final Block GREEN_CRYSTAL_ORE = null;
     public static final Block TRANSPORT_HUB = null;
     public static final Block PACKAGE = null;
+    public static final Block JADE_BLOCK = null;
 
     // Block-Items
     @ObjectHolder("green_crystal_ore")
@@ -43,6 +44,8 @@ public class Archive {
     public static final Item TRANSPORT_HUB_ITEM = null;
     @ObjectHolder("package")
     public static final Item PACKAGE_ITEM = null;
+    @ObjectHolder("jade_block")
+    public static final Item JADE_BLOCK_ITEM = null;
 
     // Tile Entity Types
     @ObjectHolder("package")
