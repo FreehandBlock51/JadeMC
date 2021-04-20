@@ -6,6 +6,7 @@ import java.util.Set;
 
 import net.minecraft.block.Block;
 import net.minecraft.item.AxeItem;
+import net.minecraft.item.HoeItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.Items;
 import net.minecraft.item.PickaxeItem;
@@ -27,9 +28,10 @@ public class Archive {
 
     // Specific Items (tools, weapons, armor, etc.)
     public static final PickaxeItem JADE_PICKAXE = null;
-    public static final SwordItem JADE_SWORD = null;
-    public static final ShovelItem JADE_SHOVEL = null;
-    public static final AxeItem JADE_AXE = null;
+    public static final SwordItem   JADE_SWORD = null;
+    public static final ShovelItem  JADE_SHOVEL = null;
+    public static final AxeItem     JADE_AXE = null;
+    public static final HoeItem     JADE_HOE = null;
 
     // Blocks
     public static final Block GREEN_CRYSTAL_ORE = null;

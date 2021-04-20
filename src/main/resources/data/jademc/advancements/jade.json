@@ -30,7 +30,11 @@
       "recipes": [
         "jademc:jade_shard",
         "jademc:jade_pickaxe",
-        "jademc:jade_sword"
+        "jademc:jade_sword",
+        "jademc:transport_hub",
+        "jademc:jade_block",
+        "jademc:jade_from_block",
+        "jademc:jade_hoe"
       ]
     }
 }

@@ -14,6 +14,7 @@ import net.dc.jademc.item.JadeItem;
 import net.dc.jademc.item.JadeShardItem;
 import net.dc.jademc.item.RingOfFlightItem;
 import net.dc.jademc.item.tool.JadeAxeItem;
+import net.dc.jademc.item.tool.JadeHoeItem;
 import net.dc.jademc.item.tool.JadePickaxeItem;
 import net.dc.jademc.item.tool.JadeShovelItem;
 import net.dc.jademc.item.tool.JadeSwordItem;
@@ -130,7 +131,8 @@ public class JadeMCMod
                 new JadePickaxeItem(),
                 new JadeSwordItem(),
                 new JadeAxeItem(),
-                new JadeShovelItem()
+                new JadeShovelItem(),
+                new JadeHoeItem()
             );
         }
         @SubscribeEvent
