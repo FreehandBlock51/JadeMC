@@ -1,0 +1,12 @@
+{
+    "type": "minecraft:blasting",
+    "ingredient": {
+        "item": "jademc:green_crystal_ore"
+    },
+    "result": {
+        "item": "jademc:impure_crystal",
+        "count": 3
+    },
+    "experience": 3.3,
+    "cookingtime": 100
+}

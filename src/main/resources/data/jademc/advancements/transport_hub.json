@@ -1,0 +1,37 @@
+{
+    "display": {
+        "icon": {
+        "item": "jademc:transport_hub"
+        },
+        "title": {
+        "translate": "advancements.jademc.transport_hub.title"
+        },
+        "description": {
+        "translate": "advancements.jademc.transport_hub.description"
+        },
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "parent": "jademc:jade",
+    "criteria": {
+        "requirement": {
+        "trigger": "minecraft:inventory_changed",
+        "conditions": {
+            "items": [
+            {
+                "item": "jademc:transport_hub"
+            }
+            ]
+        }
+        }
+    },
+    "requirements": [
+        [
+        "requirement"
+        ]
+    ],
+    "rewards": {
+        "experience": 2
+    }
+}

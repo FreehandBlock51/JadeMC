@@ -1,0 +1,21 @@
+{
+  "parent": "jademc:root",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "jademc:green_crystal_ore"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "recipes": [
+      "jademc:impure_crystal_blasting",
+      "jademc:impure_crystal"
+    ]
+  }
+}

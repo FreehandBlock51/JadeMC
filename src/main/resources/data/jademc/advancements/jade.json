@@ -1,0 +1,36 @@
+{
+    "parent": "jademc:crystal",
+    "display": {
+      "icon": {
+        "item": "minecraft:crafting_table"
+      },
+      "title": {
+        "translate": "advancement.jademc.crafting.jade.title"
+      },
+      "description": {
+        "translate": "advancement.jademc.crafting.jade.description"
+      },
+      "show_toast": true,
+      "announce_to_chat": false,
+      "hidden": false
+    },
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:inventory_changed",
+        "conditions": {
+          "items": [
+            {
+              "item": "jademc:jade"
+            }
+          ]
+        }
+      }
+    },
+    "rewards": {
+      "recipes": [
+        "jademc:jade_shard",
+        "jademc:jade_pickaxe",
+        "jademc:jade_sword"
+      ]
+    }
+}

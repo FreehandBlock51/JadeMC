@@ -1,0 +1,20 @@
+{
+    "parent": "jademc:root",
+    "criteria": {
+        "requirement": {
+        "trigger": "minecraft:inventory_changed",
+        "conditions": {
+            "items": [
+            {
+                "item": "jademc:impure_crystal"
+            }
+            ]
+        }
+        }
+    },
+    "rewards": {
+        "recipes": [
+        "jademc:jade_shard_stonecutter"
+        ]
+    }
+}

@@ -1,0 +1,12 @@
+{
+    "parent": "block/cube_all",
+    "textures": {
+        "down": "jademc:block/package_vertical",
+        "up": "jademc:block/package_vertical",
+        "north": "jademc:block/package_side",
+        "south": "jademc:block/package_side",
+        "east": "jademc:block/package_side",
+        "west": "jademc:block/package_side",
+		"particle": "jademc:particle/package"
+    }
+}

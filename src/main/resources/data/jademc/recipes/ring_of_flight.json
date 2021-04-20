@@ -1,0 +1,32 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "/E/",
+        "FSF",
+        "AJA"
+    ],
+    "key": {
+        "/": {
+            "item": "minecraft:stick"
+        },
+        "E": {
+            "item": "minecraft:emerald_block"
+        },
+        "F": {
+            "item": "minecraft:feather"
+        },
+        "S": {
+            "item": "jademc:jade"
+        },
+        "A": {
+            "item": "minecraft:fishing_rod"
+        },
+        "J": {
+            "item": "minecraft:slime_ball"
+        }
+    },
+    "result": {
+        "item": "jademc:ring_of_flight",
+        "count": 1
+    }
+}

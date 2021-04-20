@@ -1,0 +1,41 @@
+{
+  "display": {
+    "icon": {
+      "item": "jademc:ring_of_flight"
+    },
+    "title": {
+      "translate": "advancement.jademc.ring_of_flight.title"
+    },
+    "description": {
+      "translate": "advancement.jademc.ring_of_flight.description"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "parent": "jademc:root",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "jademc:ring_of_flight"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "requirement"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "jademc:ring_of_flight"
+    ],
+    "experience": 320
+  }
+}

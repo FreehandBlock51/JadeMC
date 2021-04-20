@@ -1,0 +1,7 @@
+{
+    "variants": {
+        "": [
+            { "model": "jademc:block/green_crystal_ore" }
+        ]
+    }
+}

@@ -1,0 +1,27 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "eee",
+        "eoe",
+        "l l"
+    ],
+    "key": {
+        "o":
+        {
+          "item": "jademc:jade"
+        },
+        "e":
+        {
+            "item": "minecraft:polished_andisite"
+        },
+        "l":
+        {
+            "item": "minecraft:cobblestone_wall"
+        }
+      },
+    "result": {
+        
+        "item": "jademc:transport_hub",
+        "count": 1
+    }
+  }

@@ -1,0 +1,7 @@
+{
+    "variants": {
+        "": [
+            { "model": "jademc:block/package_cube" }
+        ]
+    }
+}

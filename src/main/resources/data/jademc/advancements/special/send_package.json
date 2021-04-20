@@ -1,0 +1,41 @@
+{
+    "display": {
+        "icon": {
+        "item": "jademc:package"
+        },
+        "title": {
+        "translate": "advancements.jademc.send_package.title"
+        },
+        "description": {
+        "translate": "advancements.jademc.send_package.description"
+        },
+        "show_toast": true,
+        "announce_to_chat": true
+    },
+    "parent": "jademc:transport_hub",
+    "criteria": {
+        "requirement": {
+        "trigger": "minecraft:inventory_changed",
+        "conditions": {
+            "items": [
+            {
+                "item": "jademc:transport_hub"
+            }
+            ]
+        }
+        }
+    },
+    "requirements": [
+        [
+        "requirement"
+        ]
+    ],
+    "rewards": {
+        "loot": [
+            "minecraft:blocks/shulker_box",
+            "minecraft:blocks/shulker_box",
+            "minecraft:blocks/shulker_box"
+        ],
+        "experience": 5
+    }
+}

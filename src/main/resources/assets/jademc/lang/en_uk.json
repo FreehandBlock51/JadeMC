@@ -1,0 +1,37 @@
+{
+    "item.jademc.jade": "Jade",
+    "item.jademc.jade_shard": "Jade Shard",
+    "item.jademc.impure_crystal": "Impure Crystal",
+    "item.jademc.ring_of_flight": "Ring Of Flight",
+    "item.jademc.jade_pickaxe": "Jade Pickaxe",
+    "item.jademc.jade_sword": "Jade Sword",
+    "item.jademc.jade_axe": "Jade Axe",
+    "item.jademc.jade_shovel": "Jade Shovel",
+
+    "block.jademc.green_crystal_ore": "Geen Crystal Ore",
+    "block.jademc.transport_hub": "Transport Hub",
+    "block.jademc.package": "Package",
+
+    "advancements.jademc.root.title": "JadeMC",
+    "advancements.jademc.root.description": "Advancements for JadeMC",
+    "advancements.jademc.crystal.title": "A Strange Crystal",
+    "advancements.jademc.crystal.description": "Aquire an impure crystal.  I wonder what it's used for?",
+    "advancement.jademc.ring_of_flight.title": "It's in the Name",
+    "advancement.jademc.ring_of_flight.description": "Craft a Ring of Flight (it's for flying)",
+    "advancements.jademc.jade_tools.title": "These Things Work?",
+    "advancements.jademc.jade_tools.description": "Upgrade your iron pickaxe with jade in a smithing table",
+    "advancement.jademc.crafting.jade.title": "Shard Compilation",
+    "advancement.jademc.crafting.jade.description": "Aquire your first jade crystal",
+    "advancement.jademc.jade_sword.title": "Pointy and Shiny!",
+    "advancement.jademc.jade_sword.description": "Upgrade an iron sword with jade in a smithing table",
+    "advancements.jademc.transport_hub.title": "Hmm...",
+    "advancements.jademc.transport_hub.description": "Craft a Transport Hub.  Not quite sure what it does, though.",
+    "advancements.jademc.no.title": "NO",
+    "advancements.jademc.no.description": "Achieve the impossible (through cheating)",
+    "advancements.jademc.send_package.title": "A heartwarming gift",
+    "advancements.jademc.send_package.description": "Having figured out how the transport hub works, send something to a friend.",
+
+    "message.jademc.transport_hub.invalid_item": "You can't send that item!",
+    "message.jademc.transport_hub.invalid_name": "You need to rename the item to match the name of the recipient!",
+    "message.jademc.transport_hub.success": "package sent successfully"
+}

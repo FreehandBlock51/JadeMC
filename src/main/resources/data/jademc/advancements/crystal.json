@@ -1,0 +1,39 @@
+{
+  "parent": "jademc:root",
+  "display": {
+    "icon": {
+      "item": "jademc:impure_crystal"
+    },
+    "title": {
+      "translate": "advancements.jademc.crystal.title"
+    },
+    "description": {
+      "translate": "advancements.jademc.crystal.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true
+  },
+  "criteria": {
+    "get_crystal": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "jademc:impure_crystal"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "get_crystal"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "jademc:jade_shard_stonecutter"
+    ]
+  }
+}

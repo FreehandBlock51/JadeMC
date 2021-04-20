@@ -1,0 +1,72 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "java",
+      "name": "Launch Launch",
+      "request": "launch",
+      "mainClass": "net.dc.Launch",
+      "projectName": "MCForge-JadeMod"
+    },
+    {
+      "type": "java",
+      "name": "runClient",
+      "request": "launch",
+      "mainClass": "net.minecraftforge.userdev.LaunchTesting",
+      "projectName": "MCForge-JadeMod",
+      "cwd": "${workspaceFolder}\\run",
+      "vmArgs": "-Dforge.logging.console.level=debug -Dforge.logging.markers=REGISTRIES -XX:HeapDumpPath=MojangTricksIntelDriversForPerformance_javaw.exe_minecraft.exe.heapdump \"-Dos.name=Windows 10\" -Dos.version=10.0",
+      "args": "",
+      "env": {
+        "MOD_CLASSES": "jademc%%${workspaceFolder}\\bin\\main;jademc%%${workspaceFolder}\\bin\\main",
+        "MCP_MAPPINGS": "official_1.16.5",
+        "MCP_VERSION": "20210115.111550",
+        "FORGE_VERSION": "36.1.0",
+        "assetIndex": "1.16",
+        "assetDirectory": "C:\\Users\\dalto\\.gradle\\caches\\forge_gradle\\assets",
+        "nativesDirectory": "${workspaceFolder}\\build\\natives",
+        "FORGE_GROUP": "net.minecraftforge",
+        "target": "fmluserdevclient",
+        "MC_VERSION": "1.16.5"
+      }
+    },
+    {
+      "type": "java",
+      "name": "runData",
+      "request": "launch",
+      "mainClass": "net.minecraftforge.userdev.LaunchTesting",
+      "projectName": "MCForge-JadeMod",
+      "cwd": "${workspaceFolder}\\run",
+      "vmArgs": "-Dforge.logging.console.level=debug -Dforge.logging.markers=REGISTRIES",
+      "args": "--mod jademc --all --output C:\\Users\\dalto\\OneDrive\\MCForge-JadeMod\\src\\generated\\resources --existing C:\\Users\\dalto\\OneDrive\\MCForge-JadeMod\\src\\main\\resources",
+      "env": {
+        "MOD_CLASSES": "jademc%%${workspaceFolder}\\bin\\main;jademc%%${workspaceFolder}\\bin\\main",
+        "MCP_MAPPINGS": "official_1.16.5",
+        "MCP_VERSION": "20210115.111550",
+        "FORGE_VERSION": "36.1.0",
+        "FORGE_GROUP": "net.minecraftforge",
+        "target": "fmluserdevdata",
+        "MC_VERSION": "1.16.5"
+      }
+    },
+    {
+      "type": "java",
+      "name": "runServer",
+      "request": "launch",
+      "mainClass": "net.minecraftforge.userdev.LaunchTesting",
+      "projectName": "MCForge-JadeMod",
+      "cwd": "${workspaceFolder}\\run",
+      "vmArgs": "-Dforge.logging.console.level=debug -Dforge.logging.markers=REGISTRIES",
+      "args": "",
+      "env": {
+        "MOD_CLASSES": "jademc%%${workspaceFolder}\\bin\\main;jademc%%${workspaceFolder}\\bin\\main",
+        "MCP_MAPPINGS": "official_1.16.5",
+        "MCP_VERSION": "20210115.111550",
+        "FORGE_VERSION": "36.1.0",
+        "FORGE_GROUP": "net.minecraftforge",
+        "target": "fmluserdevserver",
+        "MC_VERSION": "1.16.5"
+      }
+    }
+  ]
+}
