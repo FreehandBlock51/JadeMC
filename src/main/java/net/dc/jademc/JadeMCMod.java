@@ -13,7 +13,10 @@ import net.dc.jademc.item.ImpureCrystalItem;
 import net.dc.jademc.item.JadeItem;
 import net.dc.jademc.item.JadeShardItem;
 import net.dc.jademc.item.RingOfFlightItem;
+import net.dc.jademc.item.armor.JadeBoots;
+import net.dc.jademc.item.armor.JadeChestplate;
 import net.dc.jademc.item.armor.JadeHelmet;
+import net.dc.jademc.item.armor.JadeLeggings;
 import net.dc.jademc.item.tool.JadeAxeItem;
 import net.dc.jademc.item.tool.JadeHoeItem;
 import net.dc.jademc.item.tool.JadePickaxeItem;
@@ -136,7 +139,10 @@ public class JadeMCMod
                 new JadeHoeItem()
             );
             itemRegistryEvent.getRegistry().registerAll( // armor
-                new JadeHelmet()
+                new JadeHelmet(),
+                new JadeChestplate(),
+                new JadeLeggings(),
+                new JadeBoots()
             );
         }
         @SubscribeEvent

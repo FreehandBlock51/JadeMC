@@ -3,11 +3,11 @@ package net.dc.jademc.item.armor;
 import net.minecraft.inventory.EquipmentSlotType;
 import net.minecraft.item.ArmorItem;
 
-public class JadeHelmet extends ArmorItem {
+public class JadeBoots extends ArmorItem {
 
-    public JadeHelmet() {
+    public JadeBoots() {
         super(new JadeArmorMaterial(), EquipmentSlotType.HEAD, JadeArmorMaterial.PROPERTIES);
         
-        this.setRegistryName("jade_helmet");
+        this.setRegistryName("jade_boots");
     }
 }

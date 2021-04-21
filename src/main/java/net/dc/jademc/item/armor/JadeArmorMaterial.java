@@ -3,6 +3,8 @@ package net.dc.jademc.item.armor;
 import net.dc.jademc.Archive;
 import net.minecraft.inventory.EquipmentSlotType;
 import net.minecraft.item.IArmorMaterial;
+import net.minecraft.item.Item;
+import net.minecraft.item.ItemGroup;
 import net.minecraft.item.crafting.Ingredient;
 import net.minecraft.util.SoundEvent;
 import net.minecraft.util.SoundEvents;
@@ -10,14 +12,21 @@ import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.api.distmarker.OnlyIn;
 
 public class JadeArmorMaterial implements IArmorMaterial {
-    static final String name = "jademc:jade";
-    static final int[] HEALTH_PER_SLOT = new int[]{13, 15, 16, 11};
-    static final int durabilityMultiplier = 30;
-    static final int[] slotProtections = new int[]{4, 10, 12, 4};
-    static final int enchantmentValue = 18;
-    static final SoundEvent sound = SoundEvents.ARMOR_EQUIP_GENERIC;
-    static final float toughness = 1.5F;
-    static final float knockbackResistance = 0.2F;
+   static final String name = "jademc:jade";
+   static final int[] HEALTH_PER_SLOT = new int[]{13, 15, 16, 11};
+   static final int durabilityMultiplier = 30;
+   static final int[] slotProtections = new int[]{4, 10, 12, 4};
+   static final int enchantmentValue = 18;
+   static final SoundEvent sound = SoundEvents.ARMOR_EQUIP_GENERIC;
+   static final float toughness = 1.5F;
+   static final float knockbackResistance = 0.2F;
+   static final Item.Properties PROPERTIES = new Item.Properties()
+      .tab(ItemGroup.TAB_COMBAT)
+      .fireResistant();
+
+   public Item.Properties getProperties() {
+      return PROPERTIES;
+   }
 
     @Override
     public int getDurabilityForSlot(EquipmentSlotType type) {
