@@ -4,8 +4,7 @@ This mod adds jade and, for the most part, jade-related items.
 
 Jade/Jade impurities
 ------------------
-Throughout your world, you may find Green Crystal Ore, which can be mined with an iron pickaxe or stronger.  When smelted, this ore will become an Impure Crystal, which can be cut in a stonecutter to get Jade Shards.  These shards can be combined in a crafting table to make Jade, and, by upgrading Iron tools with Jade in a smithing table, you can get Jade Tools, which are twice as powerful as their iron equivalents.  You can now craft a jade block using 9 jade.  
-**Currently, there is no jade armor.  I may add it in the future.**
+Throughout your world, you may find Green Crystal Ore, which can be mined with an iron pickaxe or stronger.  When smelted, this ore will become an Impure Crystal, which can be cut in a stonecutter to get Jade Shards.  These shards can be combined in a crafting table to make Jade, and, by upgrading Iron tools and armor with Jade in a smithing table, you can get their Jade variants, which are twice as powerful as iron.  Combining 9 jade in a crafting table makes a jade block.  
 
 Transport Hub
 ------------------
