@@ -6,7 +6,7 @@ import net.minecraft.item.ArmorItem;
 public class JadeBoots extends ArmorItem {
 
     public JadeBoots() {
-        super(new JadeArmorMaterial(), EquipmentSlotType.HEAD, JadeArmorMaterial.PROPERTIES);
+        super(new JadeArmorMaterial(), EquipmentSlotType.FEET, JadeArmorMaterial.PROPERTIES);
         
         this.setRegistryName("jade_boots");
     }
