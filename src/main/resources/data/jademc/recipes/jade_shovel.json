@@ -1,12 +1,12 @@
 {
     "type": "minecraft:smithing",
     "base": {
-        "item": "minecraft:iron_axe"
+        "item": "minecraft:iron_shovel"
     },
     "addition": {
         "item": "jademc:jade"
     },
     "result": {
-        "item": "jademc:jade_axe"
+        "item": "jademc:jade_shovel"
     }
 }
