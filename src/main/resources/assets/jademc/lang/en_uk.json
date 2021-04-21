@@ -7,10 +7,16 @@
     "item.jademc.jade_sword": "Jade Sword",
     "item.jademc.jade_axe": "Jade Axe",
     "item.jademc.jade_shovel": "Jade Shovel",
+    "item.jademc.jade_hoe": "Jade Hoe",
+    "item.jademc.jade_helmet": "Jade Helmet",
+    "item.jademc.jade_chestplate": "Jade Chestplate",
+    "item.jademc.jade_lelmet": "Jade Leggings",
+    "item.jademc.jade_boots": "Jade Boots",
 
     "block.jademc.green_crystal_ore": "Geen Crystal Ore",
     "block.jademc.transport_hub": "Transport Hub",
     "block.jademc.package": "Package",
+    "block.jademc.jade_block": "Jade Block",
 
     "advancements.jademc.root.title": "JadeMC",
     "advancements.jademc.root.description": "Advancements for JadeMC",
