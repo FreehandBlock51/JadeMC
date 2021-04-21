@@ -5,7 +5,7 @@ import net.minecraft.item.ItemGroup;
 
 public class JadeHoeItem extends HoeItem {
     static final Properties PROPERTIES = new Properties()
-        .tab(ItemGroup.TAB_MATERIALS)
+        .tab(ItemGroup.TAB_TOOLS)
         .fireResistant();
     static final int damage = -1;
     static final float speedBonus = -0.5F;

@@ -44,3 +44,10 @@ Official Release of v1.4
 
 * Updated lang files to include entries for Jade Block and Jade Hoe
 * Revamped Jade Tool Textures
+
+1.4.1
+------
+Small patch for v1.4
+
+* modified lang files to fix the issue of the jade leggings having no lang
+* modified jade hoe to appear in the tools tab
