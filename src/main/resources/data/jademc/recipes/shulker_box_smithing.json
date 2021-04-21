@@ -1,0 +1,12 @@
+{
+    "type": "minecraft:smithing",
+    "base": {
+        "item": "jademc:package"
+    },
+    "addition": {
+        "item": "minecraft:shulker_shell"
+    },
+    "result": {
+        "item": "minecraft:orange_shulker_box"
+    }
+}
