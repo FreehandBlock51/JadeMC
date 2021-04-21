@@ -37,6 +37,15 @@ public class Archive {
     public static final ArmorItem   JADE_CHESTPLATE = null;
     public static final ArmorItem   JADE_LEGGINGS = null;
     public static final ArmorItem   JADE_BOOTS = null;
+    public static final SwordItem   ENDERITE_SWORD = null;
+    public static final PickaxeItem ENDERITE_PICKAXE = null;
+    public static final AxeItem     ENDERITE_AXE = null;
+    public static final ShovelItem  ENDERITE_SHOVEL = null;
+    public static final HoeItem     ENDERITE_HOE = null;
+    public static final ArmorItem   ENDERITE_HELMET = null;
+    public static final ArmorItem   ENDERITE_CHESTPLATE = null;
+    public static final ArmorItem   ENDERITE_LEGGINGS = null;
+    public static final ArmorItem   ENDERITE_BOOTS = null;
 
     // Blocks
     public static final Block GREEN_CRYSTAL_ORE = null;
@@ -64,12 +73,13 @@ public class Archive {
     public static class NoRegistry {
         // Tags
         @SafeVarargs
-        static <T extends IForgeRegistryEntry<T>> Tag<T> c(T... a) {
+        private static <T extends IForgeRegistryEntry<T>> Tag<T> c(T... a) {
             HashSet<T> hs = new HashSet<T>(Arrays.asList(a));
             return Tag.create((Set<T>) hs);
         }
         public static final Tag<Item> JADE_ITEMS = c(JADE, JADE_SHARD);
-        public static final Tag<Item> JADE_REPAIR_ITEMS = c(JADE, Items.EMERALD_ORE);
+        public static final Tag<Item> JADE_REPAIR_ITEMS = c(JADE);
+        public static final Tag<Item> ENDERITE_REPAIR_ITEMS = c();
         public static final Tag<Item> VANILLA_TRANSPORT_ITEMS = c(
             Items.SHULKER_BOX,
             Items.RED_SHULKER_BOX,

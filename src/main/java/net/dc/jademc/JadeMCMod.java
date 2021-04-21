@@ -14,10 +14,19 @@ import net.dc.jademc.item.ImpureCrystalItem;
 import net.dc.jademc.item.JadeItem;
 import net.dc.jademc.item.JadeShardItem;
 import net.dc.jademc.item.RingOfFlightItem;
+import net.dc.jademc.item.armor.EnderiteBoots;
+import net.dc.jademc.item.armor.EnderiteChestplate;
+import net.dc.jademc.item.armor.EnderiteHelmet;
+import net.dc.jademc.item.armor.EnderiteLeggings;
 import net.dc.jademc.item.armor.JadeBoots;
 import net.dc.jademc.item.armor.JadeChestplate;
 import net.dc.jademc.item.armor.JadeHelmet;
 import net.dc.jademc.item.armor.JadeLeggings;
+import net.dc.jademc.item.tool.EnderiteAxeItem;
+import net.dc.jademc.item.tool.EnderiteHoeItem;
+import net.dc.jademc.item.tool.EnderitePickaxeItem;
+import net.dc.jademc.item.tool.EnderiteShovelItem;
+import net.dc.jademc.item.tool.EnderiteSword;
 import net.dc.jademc.item.tool.JadeAxeItem;
 import net.dc.jademc.item.tool.JadeHoeItem;
 import net.dc.jademc.item.tool.JadePickaxeItem;
@@ -139,13 +148,22 @@ public class JadeMCMod
                 new JadeSwordItem(),
                 new JadeAxeItem(),
                 new JadeShovelItem(),
-                new JadeHoeItem()
+                new JadeHoeItem(),
+                new EnderitePickaxeItem(),
+                new EnderiteSword(),
+                new EnderiteAxeItem(),
+                new EnderiteShovelItem(),
+                new EnderiteHoeItem()
             );
             itemRegistryEvent.getRegistry().registerAll( // armor
                 new JadeHelmet(),
                 new JadeChestplate(),
                 new JadeLeggings(),
-                new JadeBoots()
+                new JadeBoots(),
+                new EnderiteHelmet(),
+                new EnderiteChestplate(),
+                new EnderiteLeggings(),
+                new EnderiteBoots()
             );
         }
         @SubscribeEvent

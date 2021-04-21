@@ -60,6 +60,8 @@ Small patch for v1.4
 
 1.5
 ----
-+ Added Enderite Ore
++ Added Enderite Ore and Molten Enderite
++ Added Enderite Ingot
++ Added Enderite Tools and Armor
 
 * Fixed issue with Jade Armor where everything only equipped as a helmet
