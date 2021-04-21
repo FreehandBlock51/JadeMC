@@ -36,10 +36,11 @@ beta-1.2.1
 + Added Jade Block
 + Added Jade Hoe
 
-1.4 **(UNRELEASED)**
+1.4
 ---------------------
 Official Release of v1.4
 
 + Added Jade Armor
 
 * Updated lang files to include entries for Jade Block and Jade Hoe
+* Revamped Jade Tool Textures
