@@ -49,5 +49,11 @@ Official Release of v1.4
 ------
 Small patch for v1.4
 
-* modified lang files to fix the issue of the jade leggings having no lang
-* modified jade hoe to appear in the tools tab
+* Modified lang files to fix the issue of the jade leggings having no lang
+* Modified jade hoe to appear in the tools tab
+
+1.4.2
+------
++ Added recipe for Jade Shovel
+
+* Removed extra unknown characters from Jade Axe Recipe
