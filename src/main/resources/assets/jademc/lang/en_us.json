@@ -7,10 +7,16 @@
     "item.jademc.jade_sword": "Jade Sword",
     "item.jademc.jade_axe": "Jade Axe",
     "item.jademc.jade_shovel": "Jade Shovel",
+    "item.jademc.jade_hoe": "Jade Hoe",
+    "item.jademc.jade_helmet": "Jade Helmet",
+    "item.jademc.jade_chestplate": "Jade Chestplate",
+    "item.jademc.jade_lelmet": "Jade Leggings",
+    "item.jademc.jade_boots": "Jade Boots",
     
     "block.jademc.green_crystal_ore": "Geen Crystal Ore",
     "block.jademc.transport_hub": "Transport Hub",
     "block.jademc.package": "Package",
+    "block.jademc.jade_block": "Jade Block",
 
     "advancements.jademc.root.title": "JadeMC",
     "advancements.jademc.root.description": "Advancements for JadeMC",
@@ -30,6 +36,8 @@
     "advancements.jademc.no.description": "Achieve the impossible (through cheating)",
     "advancements.jademc.send_package.title": "A heartwarming gift",
     "advancements.jademc.send_package.description": "Having figured out how the transport hub works, send something to a friend.",
+    "advancements.jademc.obtain_armor.title": "Cover Me In Jade",
+    "advancements.jademc.obtain_armor.description": "Upgrade your iron armor to jade.",
 
     "message.jademc.transport_hub.invalid_item": "You can't send that item!",
     "message.jademc.transport_hub.invalid_name": "You need to rename the item to match the name of the recipient!",

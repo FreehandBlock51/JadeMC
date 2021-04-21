@@ -1,0 +1,12 @@
+{
+    "type": "minecraft:smithing",
+    "base": {
+        "item": "minecraft:iron_boots"
+    },
+    "addition": {
+        "item": "jademc:jade"
+    },
+    "result": {
+        "item": "jademc:jade_boots"
+    }
+}

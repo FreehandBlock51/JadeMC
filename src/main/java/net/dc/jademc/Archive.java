@@ -5,6 +5,7 @@ import java.util.HashSet;
 import java.util.Set;
 
 import net.minecraft.block.Block;
+import net.minecraft.item.ArmorItem;
 import net.minecraft.item.AxeItem;
 import net.minecraft.item.HoeItem;
 import net.minecraft.item.Item;
@@ -32,6 +33,10 @@ public class Archive {
     public static final ShovelItem  JADE_SHOVEL = null;
     public static final AxeItem     JADE_AXE = null;
     public static final HoeItem     JADE_HOE = null;
+    public static final ArmorItem   JADE_HELMET = null;
+    public static final ArmorItem   JADE_CHESTPLATE = null;
+    public static final ArmorItem   JADE_LEGGINGS = null;
+    public static final ArmorItem   JADE_BOOTS = null;
 
     // Blocks
     public static final Block GREEN_CRYSTAL_ORE = null;

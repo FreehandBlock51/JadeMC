@@ -34,7 +34,11 @@
         "jademc:transport_hub",
         "jademc:jade_block",
         "jademc:jade_from_block",
-        "jademc:jade_hoe"
+        "jademc:jade_hoe",
+        "jademc:jade_helmet",
+        "jademc:jade_chestplate",
+        "jademc:jade_leggings",
+        "jademc:jade_boots"
       ]
     }
 }
