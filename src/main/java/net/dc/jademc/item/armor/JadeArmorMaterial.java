@@ -10,7 +10,7 @@ import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.api.distmarker.OnlyIn;
 
 public class JadeArmorMaterial implements IArmorMaterial {
-    static final String name = "jade";
+    static final String name = "jademc:jade";
     static final int[] HEALTH_PER_SLOT = new int[]{13, 15, 16, 11};
     static final int durabilityMultiplier = 30;
     static final int[] slotProtections = new int[]{4, 10, 12, 4};
