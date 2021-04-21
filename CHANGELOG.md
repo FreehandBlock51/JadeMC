@@ -57,3 +57,9 @@ Small patch for v1.4
 + Added recipe for Jade Shovel
 
 * Removed extra unknown characters from Jade Axe Recipe
+
+1.5
+----
++ Added Enderite Ore
+
+* Fixed issue with Jade Armor where everything only equipped as a helmet
