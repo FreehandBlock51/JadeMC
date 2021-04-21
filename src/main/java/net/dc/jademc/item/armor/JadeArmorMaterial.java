@@ -17,7 +17,7 @@ public class JadeArmorMaterial implements IArmorMaterial {
     static final int enchantmentValue = 18;
     static final SoundEvent sound = SoundEvents.ARMOR_EQUIP_GENERIC;
     static final float toughness = 1.5F;
-    static final float knockbackResistance = 0.5F;
+    static final float knockbackResistance = 0.2F;
 
     @Override
     public int getDurabilityForSlot(EquipmentSlotType type) {
