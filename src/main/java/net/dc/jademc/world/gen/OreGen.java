@@ -2,10 +2,12 @@ package net.dc.jademc.world.gen;
 
 import net.dc.jademc.Archive;
 import net.minecraft.block.Block;
+import net.minecraft.block.Blocks;
 import net.minecraft.world.gen.GenerationStage;
 import net.minecraft.world.gen.feature.ConfiguredFeature;
 import net.minecraft.world.gen.feature.Feature;
 import net.minecraft.world.gen.feature.OreFeatureConfig;
+import net.minecraft.world.gen.feature.template.RandomBlockMatchRuleTest;
 import net.minecraft.world.gen.feature.template.RuleTest;
 import net.minecraft.world.gen.placement.Placement;
 import net.minecraft.world.gen.placement.TopSolidRangeConfig;
@@ -23,7 +25,7 @@ public class OreGen {
                 
                 break;
             case THEEND: // the end
-                
+                addOreToBiome(event.getGeneration(), Archive.ENDERITE_ORE, new RandomBlockMatchRuleTest(Blocks.END_STONE, 0.32F), 255, 0, 5, 2);
                 break;
             default: // hopefully, the rest of the biomes are in the overworld :/
                 addOreToBiome(event.getGeneration(), Archive.GREEN_CRYSTAL_ORE, OreFeatureConfig.FillerBlockType.NATURAL_STONE, 1255, 3, 10, 500);

@@ -5,6 +5,7 @@ import java.util.stream.Collectors;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
+import net.dc.jademc.block.EnderiteOre;
 import net.dc.jademc.block.GreenCrystalOre;
 import net.dc.jademc.block.JadeBlock;
 import net.dc.jademc.block.Package;
@@ -112,7 +113,8 @@ public class JadeMCMod
                 new GreenCrystalOre(),
                 new TransportHub(),
                 new Package(),
-                new JadeBlock()
+                new JadeBlock(),
+                new EnderiteOre()
             );
         }
         @SubscribeEvent
@@ -129,7 +131,8 @@ public class JadeMCMod
                 new GreenCrystalOre.Item(),
                 new TransportHub.Item(),
                 new Package.Item(),
-                new JadeBlock.Item()
+                new JadeBlock.Item(),
+                new EnderiteOre.Item()
             );
             itemRegistryEvent.getRegistry().registerAll( // tools
                 new JadePickaxeItem(),
