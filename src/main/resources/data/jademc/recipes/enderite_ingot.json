@@ -1,0 +1,23 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "#J#",
+        "JIJ",
+        "#J#"
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:netherite_scrap"
+        },
+        "J": {
+            "item": "jademc:molten_enderite"
+        },
+        "I": {
+            "item": "jademc:jade"
+        }
+    },
+    "result": {
+        "item": "jademc:enderite_ingot",
+        "count": 1
+    }
+}
