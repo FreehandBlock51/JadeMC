@@ -29,6 +29,7 @@
     "block.jademc.package": "Package",
     "block.jademc.jade_block": "Jade Block",
     "block.jademc.enderite_ore": "Enderite Ore",
+    "block.jademc.enderite_block": "Enderite Block",
 
     "advancements.jademc.root.title": "JadeMC",
     "advancements.jademc.root.description": "Advancements for JadeMC",
@@ -54,6 +55,10 @@
     "advancements.jademc.enderite_ore.description": "Obtain enderite ore",
     "advancements.jademc.enderite_armor.title": "Invincibility",
     "advancements.jademc.enderite_armor.description": "Obtain a full set of enderite armor",
+    "advancements.jademc.enderite_hoe.title": "Not Worth It",
+    "advancements.jademc.enderite_hoe.description": "Obtain an Enderite Hoe.  You wouldn't do that just for the achievement, would you?",
+    "advancements.jademc.enderite_stack.title": "Insanely Overpowered",
+    "advancements.jademc.enderite_stack.description": "Obtain a stack of enderite blocks",
 
     "message.jademc.transport_hub.invalid_item": "You can't send that item!",
     "message.jademc.transport_hub.invalid_name": "You need to rename the item to match the name of the recipient!",

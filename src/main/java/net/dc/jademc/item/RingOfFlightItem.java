@@ -9,13 +9,15 @@ import net.minecraft.potion.Effects;
 import net.minecraft.util.ActionResult;
 import net.minecraft.util.Hand;
 import net.minecraft.world.World;
+import net.minecraft.item.Rarity;
 
 public class RingOfFlightItem extends Item {
 
     static final Item.Properties PROPERTIES = new Item.Properties()
         .defaultDurability(600)
         .fireResistant()
-        .tab(ItemGroup.TAB_SEARCH);
+        .tab(ItemGroup.TAB_SEARCH)
+        .rarity(Rarity.RARE);
 
         
     public RingOfFlightItem() {
@@ -23,47 +25,6 @@ public class RingOfFlightItem extends Item {
         
         this.setRegistryName("ring_of_flight");
     }
-        
-    /*
-    private boolean gFly = false;
-    @Override
-    public void onArmorTick(ItemStack stack, World world, PlayerEntity player) {
-        gFly = true;
-        player.abilities.mayfly = gFly;
-    }
-    @Override
-    public boolean onDroppedByPlayer(ItemStack item, PlayerEntity player) {
-        if (!player.isCreative() && !player.isSpectator()) {
-            player.abilities.mayfly = false;
-            player.abilities.flying = false;
-        }
-        this.gFly = false;
-        return super.onDroppedByPlayer(item, player);
-    }
-    @Override
-    public void inventoryTick(ItemStack itemStack, World world, Entity entity, int slot,
-            boolean b) {
-        if (entity instanceof PlayerEntity) {
-            if (((PlayerEntity) entity).isCreative() || ((PlayerEntity) entity).isSpectator()) {
-                return;
-            }
-            if (this.gFly) {
-                boolean flying = false;
-                for (ItemStack stack : ((PlayerEntity) entity).getArmorSlots()) {
-                    flying = flying || stack.equals(stack, true);
-                }
-                this.gFly = flying;
-            }
-            if (!this.gFly) {
-                ((PlayerEntity) entity).abilities.mayfly = gFly;
-                ((PlayerEntity) entity).abilities.flying = gFly;
-            }
-        }
-    }
-    @Override
-    public EquipmentSlotType getEquipmentSlot(ItemStack stack) {
-        return EquipmentSlotType.CHEST;
-    }*/
 
     @Override
     public ActionResult<ItemStack> use(World world, PlayerEntity player, Hand hand) {

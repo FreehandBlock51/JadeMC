@@ -53,6 +53,7 @@ public class Archive {
     public static final Block PACKAGE = null;
     public static final Block JADE_BLOCK = null;
     public static final Block ENDERITE_ORE = null;
+    public static final Block ENDERITE_BLOCK = null;
 
     // Block-Items
     @ObjectHolder("green_crystal_ore")
@@ -65,6 +66,8 @@ public class Archive {
     public static final Item JADE_BLOCK_ITEM = null;
     @ObjectHolder("enderite_ore")
     public static final Item ENDERITE_ORE_ITEM = null;
+    @ObjectHolder("enderite_block")
+    public static final Item ENDERITE_BLOCK_ITEM = null;
 
     // Tile Entity Types
     @ObjectHolder("package")
