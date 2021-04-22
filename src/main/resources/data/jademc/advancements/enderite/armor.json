@@ -1,0 +1,43 @@
+{
+    "__comment": "Made with TheDestruc7i0n's advancements generator: https://advancements.thedestruc7i0n.ca",
+    "display": {
+        "title": {
+            "translate": "advancements.jademc.enderite_armor.title"
+        },
+        "description": {
+            "translate": "advancements.jademc.enderite_armor.description"
+        },
+        "icon": {
+            "item": "jademc:enderite_chestplate"
+        },
+        "frame": "challenge",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "armor": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "jademc:enderite_helmet"
+                    },
+                    {
+                        "item": "jademc:enderite_chestplate"
+                    },
+                    {
+                        "item": "jademc:enderite_leggings"
+                    },
+                    {
+                        "item": "jademc:enderite_boots"
+                    }
+                ]
+            }
+        }
+    },
+    "rewards": {
+        "experience": 20
+    },
+    "parent": "jademc:enderite/root"
+}

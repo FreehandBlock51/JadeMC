@@ -1,0 +1,31 @@
+{
+    "display": {
+        "icon": {
+        "item": "jademc:enderite_block"
+        },
+        "title": {
+        "translate": "advancements.jademc.enderite_stack.title"
+        },
+        "description": {
+        "translate": "advancements.jademc.enderite_stack.description"
+        },
+        "frame": "challenge",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "parent": "jademc:enderite/root",
+    "criteria": {
+        "requirement": {
+        "trigger": "minecraft:inventory_changed",
+        "conditions": {
+            "items": [
+            {
+                "item": "jademc:enderite_block",
+                "count": 64
+            }
+            ]
+        }
+        }
+    }
+}

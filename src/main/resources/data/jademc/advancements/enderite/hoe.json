@@ -1,0 +1,30 @@
+{
+    "display": {
+      "icon": {
+        "item": "jademc:enderite_hoe"
+      },
+      "title": {
+        "translate": "advancements.jademc.enderite_hoe.title"
+      },
+      "description": {
+        "translate": "advancements.jademc.enderite_hoe.description"
+      },
+      "frame": "challenge",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+    },
+    "parent": "jademc:enderite/root",
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:inventory_changed",
+        "conditions": {
+          "items": [
+            {
+              "item": "jademc:enderite_hoe"
+            }
+          ]
+        }
+      }
+    }
+  }

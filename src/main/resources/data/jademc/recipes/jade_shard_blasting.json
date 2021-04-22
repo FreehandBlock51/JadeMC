@@ -1,0 +1,12 @@
+{
+    "type": "minecraft:blasting",
+    "ingredient": {
+        "item": "jademc:impure_crystal"
+    },
+    "result": {
+        "item": "jademc:jade_shard",
+        "count": 2
+    },
+    "experience": 3.3,
+    "cookingtime": 100
+}

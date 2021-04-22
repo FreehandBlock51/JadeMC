@@ -1,0 +1,12 @@
+{
+    "type": "minecraft:blasting",
+    "ingredient": {
+        "item": "jademc:enderite_ore"
+    },
+    "result": {
+        "item": "jademc:molten_enderite",
+        "count": 1
+    },
+    "experience": 3.3,
+    "cookingtime": 100
+}

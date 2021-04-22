@@ -1,0 +1,12 @@
+{
+    "type": "minecraft:smithing",
+    "base": {
+        "item": "minecraft:netherite_pickaxe"
+    },
+    "addition": {
+        "item": "jademc:enderite"
+    },
+    "result": {
+        "item": "jademc:enderite_pickaxe"
+    }
+}

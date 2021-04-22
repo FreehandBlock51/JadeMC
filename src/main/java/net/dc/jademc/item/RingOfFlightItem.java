@@ -1,66 +1,43 @@
 package net.dc.jademc.item;
 
-import net.minecraft.entity.Entity;
 import net.minecraft.entity.player.PlayerEntity;
-import net.minecraft.inventory.EquipmentSlotType;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
+import net.minecraft.potion.EffectInstance;
+import net.minecraft.potion.Effects;
+import net.minecraft.util.ActionResult;
+import net.minecraft.util.Hand;
 import net.minecraft.world.World;
+import net.minecraft.item.Rarity;
 
 public class RingOfFlightItem extends Item {
 
     static final Item.Properties PROPERTIES = new Item.Properties()
         .defaultDurability(600)
         .fireResistant()
-        .tab(ItemGroup.TAB_SEARCH);
+        .tab(ItemGroup.TAB_SEARCH)
+        .rarity(Rarity.RARE);
 
-    boolean gFly = false;
-    static final boolean x = true;
-
+        
     public RingOfFlightItem() {
         super(PROPERTIES);
-
+        
         this.setRegistryName("ring_of_flight");
     }
 
     @Override
-    public void onArmorTick(ItemStack stack, World world, PlayerEntity player) {
-        gFly = true;
-        player.abilities.mayfly = gFly;
-    }
-    @Override
-    public boolean onDroppedByPlayer(ItemStack item, PlayerEntity player) {
-        if (x) { return false; }
-        if (!player.isCreative() || !player.isSpectator()) {
-            player.abilities.mayfly = false;
-            player.abilities.flying = false;
+    public ActionResult<ItemStack> use(World world, PlayerEntity player, Hand hand) {
+        ItemStack stack = player.getItemInHand(hand);
+        int currentDamage = stack.getDamageValue();
+        if ((player.isCreative() || ++currentDamage < stack.getMaxDamage()) && !player.hasEffect(Effects.LEVITATION)) {
+            player.addEffect(new EffectInstance(Effects.LEVITATION, 10, 5));
+            stack.setDamageValue(currentDamage);
         }
-        this.gFly = false;
-        return super.onDroppedByPlayer(item, player);
+        return super.use(world, player, hand);
     }
     @Override
-    public void inventoryTick(ItemStack p_77663_1_, World p_77663_2_, Entity p_77663_3_, int p_77663_4_,
-            boolean p_77663_5_) {
-        if (p_77663_3_ instanceof PlayerEntity) {
-            if (((PlayerEntity) p_77663_3_).isCreative() || ((PlayerEntity) p_77663_3_).isSpectator()) {
-                return;
-            }
-            if (this.gFly) {
-                boolean flying = false;
-                for (ItemStack stack : ((PlayerEntity) p_77663_3_).getArmorSlots()) {
-                    flying = flying || stack.equals(p_77663_1_, true);
-                }
-                this.gFly = flying;
-            }
-            if (!this.gFly) {
-                ((PlayerEntity) p_77663_3_).abilities.mayfly = gFly;
-                ((PlayerEntity) p_77663_3_).abilities.flying = gFly;
-            }
-        }
-    }
-    @Override
-    public EquipmentSlotType getEquipmentSlot(ItemStack stack) {
-        return EquipmentSlotType.CHEST;
+    public float getXpRepairRatio(ItemStack stack) {
+        return 0.01F;
     }
 }

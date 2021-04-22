@@ -5,6 +5,8 @@ import java.util.stream.Collectors;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
+import net.dc.jademc.block.EnderiteBlock;
+import net.dc.jademc.block.EnderiteOre;
 import net.dc.jademc.block.GreenCrystalOre;
 import net.dc.jademc.block.JadeBlock;
 import net.dc.jademc.block.Package;
@@ -13,10 +15,19 @@ import net.dc.jademc.item.ImpureCrystalItem;
 import net.dc.jademc.item.JadeItem;
 import net.dc.jademc.item.JadeShardItem;
 import net.dc.jademc.item.RingOfFlightItem;
+import net.dc.jademc.item.armor.EnderiteBoots;
+import net.dc.jademc.item.armor.EnderiteChestplate;
+import net.dc.jademc.item.armor.EnderiteHelmet;
+import net.dc.jademc.item.armor.EnderiteLeggings;
 import net.dc.jademc.item.armor.JadeBoots;
 import net.dc.jademc.item.armor.JadeChestplate;
 import net.dc.jademc.item.armor.JadeHelmet;
 import net.dc.jademc.item.armor.JadeLeggings;
+import net.dc.jademc.item.tool.EnderiteAxeItem;
+import net.dc.jademc.item.tool.EnderiteHoeItem;
+import net.dc.jademc.item.tool.EnderitePickaxeItem;
+import net.dc.jademc.item.tool.EnderiteShovelItem;
+import net.dc.jademc.item.tool.EnderiteSword;
 import net.dc.jademc.item.tool.JadeAxeItem;
 import net.dc.jademc.item.tool.JadeHoeItem;
 import net.dc.jademc.item.tool.JadePickaxeItem;
@@ -112,7 +123,9 @@ public class JadeMCMod
                 new GreenCrystalOre(),
                 new TransportHub(),
                 new Package(),
-                new JadeBlock()
+                new JadeBlock(),
+                new EnderiteOre(),
+                new EnderiteBlock()
             );
         }
         @SubscribeEvent
@@ -129,20 +142,31 @@ public class JadeMCMod
                 new GreenCrystalOre.Item(),
                 new TransportHub.Item(),
                 new Package.Item(),
-                new JadeBlock.Item()
+                new JadeBlock.Item(),
+                new EnderiteOre.Item(),
+                new EnderiteBlock.Item()
             );
             itemRegistryEvent.getRegistry().registerAll( // tools
                 new JadePickaxeItem(),
                 new JadeSwordItem(),
                 new JadeAxeItem(),
                 new JadeShovelItem(),
-                new JadeHoeItem()
+                new JadeHoeItem(),
+                new EnderitePickaxeItem(),
+                new EnderiteSword(),
+                new EnderiteAxeItem(),
+                new EnderiteShovelItem(),
+                new EnderiteHoeItem()
             );
             itemRegistryEvent.getRegistry().registerAll( // armor
                 new JadeHelmet(),
                 new JadeChestplate(),
                 new JadeLeggings(),
-                new JadeBoots()
+                new JadeBoots(),
+                new EnderiteHelmet(),
+                new EnderiteChestplate(),
+                new EnderiteLeggings(),
+                new EnderiteBoots()
             );
         }
         @SubscribeEvent

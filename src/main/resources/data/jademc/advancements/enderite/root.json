@@ -1,0 +1,31 @@
+{
+    "__comment": "Made with TheDestruc7i0n's advancements generator: https://advancements.thedestruc7i0n.ca",
+    "display": {
+        "title": {
+            "translate": "advancements.jademc.enderite_ore.title"
+        },
+        "description": {
+            "translate": "advancements.jademc.enderite_ore.description"
+        },
+        "icon": {
+            "item": "jademc:enderite_ore"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": true,
+        "background": "minecraft:textures/gui/advancements/backgrounds/end_stone.png"
+    },
+    "criteria": {
+        "ore": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "jademc:enderite_ore"
+                    }
+                ]
+            }
+        }
+    }
+}

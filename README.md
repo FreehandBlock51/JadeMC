@@ -15,3 +15,7 @@ Package
 ------------------
 While this block isn't made from jade, it is a mobile storage block, similar to a shulker box, which can be pushed by pistons.  It provides nine slots of inventory space, and can be used to transport items via a transport hub.  
 **This block cannot be pulled by sticky pistons.  I may find a way to change that in the future.**
+
+Enderite
+------------------
+A rare material only found in the end, Enderite can be used to upgrade Netherite tools and armor, doubling their stats.  The ore is to strong for even a netherite pickaxe to mine, and can only be collected with jade tools.

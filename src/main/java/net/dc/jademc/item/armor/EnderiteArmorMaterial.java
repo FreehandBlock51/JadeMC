@@ -1,0 +1,73 @@
+package net.dc.jademc.item.armor;
+
+import net.dc.jademc.Archive;
+import net.minecraft.inventory.EquipmentSlotType;
+import net.minecraft.item.IArmorMaterial;
+import net.minecraft.item.Item;
+import net.minecraft.item.ItemGroup;
+import net.minecraft.item.Rarity;
+import net.minecraft.item.crafting.Ingredient;
+import net.minecraft.util.SoundEvent;
+import net.minecraft.util.SoundEvents;
+import net.minecraftforge.api.distmarker.Dist;
+import net.minecraftforge.api.distmarker.OnlyIn;
+
+public class EnderiteArmorMaterial implements IArmorMaterial {
+    static final String name = "jademc:enderite";
+    static final int[] HEALTH_PER_SLOT = new int[]{13, 15, 16, 11};
+    static final int durabilityMultiplier = 74;
+    static final int[] slotProtections = new int[]{6, 12, 16, 6};
+    static final int enchantmentValue = 30;
+    static final SoundEvent sound = SoundEvents.ARMOR_EQUIP_NETHERITE;
+    static final float toughness = 6.0F;
+    static final float knockbackResistance = 0.5F;
+    static final Item.Properties PROPERTIES = new Item.Properties()
+       .tab(ItemGroup.TAB_COMBAT)
+       .fireResistant()
+       .rarity(Rarity.EPIC);
+ 
+    public Item.Properties getProperties() {
+       return PROPERTIES;
+    }
+ 
+     @Override
+     public int getDurabilityForSlot(EquipmentSlotType type) {
+         return HEALTH_PER_SLOT[type.getIndex()] * durabilityMultiplier;
+      }
+   
+      @Override
+      public int getDefenseForSlot(EquipmentSlotType type) {
+         return slotProtections[type.getIndex()];
+      }
+   
+      @Override
+      public int getEnchantmentValue() {
+         return enchantmentValue;
+      }
+   
+      @Override
+      public SoundEvent getEquipSound() {
+         return sound;
+      }
+   
+      @Override
+      public Ingredient getRepairIngredient() {
+         return Ingredient.of(Archive.JADE.getDefaultInstance());
+      }
+   
+      @Override
+      @OnlyIn(Dist.CLIENT)
+      public String getName() {
+         return name;
+      }
+   
+      @Override
+      public float getToughness() {
+         return toughness;
+      }
+   
+      @Override
+      public float getKnockbackResistance() {
+         return knockbackResistance;
+      }
+}
