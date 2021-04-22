@@ -2,10 +2,10 @@
     "__comment": "Made with TheDestruc7i0n's advancements generator: https://advancements.thedestruc7i0n.ca",
     "display": {
         "title": {
-            "text": "advancements.jademc.enderite_armor.title"
+            "translate": "advancements.jademc.enderite_armor.title"
         },
         "description": {
-            "text": "advancements.jademc.enderite_armor.description"
+            "translate": "advancements.jademc.enderite_armor.description"
         },
         "icon": {
             "item": "jademc:enderite_chestplate"

@@ -8,7 +8,11 @@
         },
         "description": {
         "translate": "advancements.jademc.enderite_stack.description"
-        }
+        },
+        "frame": "challenge",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
     },
     "parent": "jademc:enderite/root",
     "criteria": {

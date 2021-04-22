@@ -30,7 +30,7 @@ public class RingOfFlightItem extends Item {
     public ActionResult<ItemStack> use(World world, PlayerEntity player, Hand hand) {
         ItemStack stack = player.getItemInHand(hand);
         int currentDamage = stack.getDamageValue();
-        if (++currentDamage < stack.getMaxDamage() && !player.hasEffect(Effects.LEVITATION)) {
+        if ((player.isCreative() || ++currentDamage < stack.getMaxDamage()) && !player.hasEffect(Effects.LEVITATION)) {
             player.addEffect(new EffectInstance(Effects.LEVITATION, 10, 5));
             stack.setDamageValue(currentDamage);
         }
