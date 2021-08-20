@@ -11,9 +11,11 @@ import net.dc.jademc.block.GreenCrystalOre;
 import net.dc.jademc.block.JadeBlock;
 import net.dc.jademc.block.Package;
 import net.dc.jademc.block.TransportHub;
+import net.dc.jademc.item.EnderiteIngot;
 import net.dc.jademc.item.ImpureCrystalItem;
 import net.dc.jademc.item.JadeItem;
 import net.dc.jademc.item.JadeShardItem;
+import net.dc.jademc.item.MoltenEnderite;
 import net.dc.jademc.item.RingOfFlightItem;
 import net.dc.jademc.item.armor.EnderiteBoots;
 import net.dc.jademc.item.armor.EnderiteChestplate;
@@ -136,7 +138,9 @@ public class JadeMCMod
                 new JadeItem(),
                 new JadeShardItem(),
                 new ImpureCrystalItem(),
-                new RingOfFlightItem()
+                new RingOfFlightItem(),
+                new MoltenEnderite(),
+                new EnderiteIngot()
             );
             itemRegistryEvent.getRegistry().registerAll( // block items
                 new GreenCrystalOre.Item(),

@@ -4,7 +4,7 @@
         "item": "minecraft:netherite_shovel"
     },
     "addition": {
-        "item": "jademc:enderite"
+        "item": "jademc:enderite_ingot"
     },
     "result": {
         "item": "jademc:enderite_shovel"

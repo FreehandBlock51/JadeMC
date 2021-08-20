@@ -1,13 +1,54 @@
 {
-    "pools": [
-      {
-        "rolls": 1,
-        "entries": [
-          {
-            "type": "minecraft:item",
-            "name": "jademc:package"
-          }
-        ]
-      }
-    ]
-  }
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        // {
+        //   "type": "minecraft:item",
+        //   "name": "jademc:package",
+        //   "functions": [
+        //     {
+        //       "function": "minecraft:copy_name",
+        //       "source": "block_entity"
+        //     },
+        //     {
+        //       "function": "minecraft:copy_nbt",
+        //       "source": "block_entity",
+        //       "ops": [
+        //         {
+        //           "source": "Lock",
+        //           "target": "BlockEntityTag.Lock",
+        //           "op": "replace"
+        //         },
+        //         {
+        //           "source": "LootTable",
+        //           "target": "BlockEntityTag.LootTable",
+        //           "op": "replace"
+        //         },
+        //         {
+        //           "source": "LootTableSeed",
+        //           "target": "BlockEntityTag.LootTableSeed",
+        //           "op": "replace"
+        //         }
+        //       ]
+        //     },
+        //     {
+        //       "function": "minecraft:set_contents",
+        //       "entries": [
+        //         {
+        //           "type": "minecraft:dynamic",
+        //           "name": "minecraft:contents"
+        //         }
+        //       ]
+        //     }
+        //   ]
+        // }
+        {
+          "type": "minecraft:loot_table",
+          "name": "minecraft:loot_tables/shulker_box"
+        }
+      ]
+    }
+  ]
+}

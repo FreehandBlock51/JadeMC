@@ -4,7 +4,7 @@
         "item": "minecraft:netherite_pickaxe"
     },
     "addition": {
-        "item": "jademc:enderite"
+        "item": "jademc:enderite_ingot"
     },
     "result": {
         "item": "jademc:enderite_pickaxe"
