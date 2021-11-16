@@ -40,18 +40,18 @@ import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.api.distmarker.OnlyIn;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 
-@SuppressWarnings({"Deprecated"})
 public class Package extends ContainerBlock {
-    static final Properties PROPERTIES = Properties.of(new Material.Builder(MaterialColor.TERRACOTTA_ORANGE).build())
+    static final Properties PROPERTIES = Properties.of(new Material.Builder(MaterialColor.COLOR_ORANGE).build())
         .harvestLevel(2)
-        .strength(5, 2);
+        .strength(3, 2);
 
     public Package() {
         super(PROPERTIES);
+
         this.setRegistryName("package");
     }
 
-    static final float[] BEACON_COLOR_MULTIPLIER = new float[] {0xFF / 255, 0xA5 / 255, 0x00};
+    static final float[] BEACON_COLOR_MULTIPLIER = new float[] {0xFF / 255, 0xA5 / 255, 0x00 / 255};
     @Override
     public float[] getBeaconColorMultiplier(BlockState state, IWorldReader world, BlockPos pos, BlockPos beaconPos) {
         return BEACON_COLOR_MULTIPLIER;
